@@ -28,8 +28,11 @@ img {
     border-radius: 50%;
 }
 
-h1, h2 {
+h1{
     color: #fafafa;
+}
+h2 {
+    color: #462727;
 }
 
 .project, .experience, .skills {
