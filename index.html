@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M Bilal Mehar | Software Engineer & Python Expert</title>
+    <title>Python Expert</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><path d='M30 70L15 50L30 30' stroke='white' stroke-width='12' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M70 30L85 50L70 70' stroke='white' stroke-width='12' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M40 75L60 25' stroke='white' stroke-width='12' stroke-linecap='round' fill='none'/></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -13,9 +14,23 @@
 </head>
 <body class="bg-[#f8fafc] text-slate-900 font-sans selection:bg-blue-100">
 
+    <div id="loader" class="fixed inset-0 z-[100] bg-slate-900 flex flex-col items-center justify-center transition-opacity duration-500">
+        <div class="relative">
+            <svg width="80" height="80" viewBox="0 0 100 100" class="animate-pulse">
+                <rect width="100" height="100" rx="24" fill="#2563eb"/>
+                <path d="M30 70L15 50L30 30" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" class="animate-bounce" style="animation-delay: 0.1s"/>
+                <path d="M70 30L85 50L70 70" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" class="animate-bounce" style="animation-delay: 0.2s"/>
+                <path d="M45 75L55 25" stroke="white" stroke-width="8" stroke-linecap="round" fill="none" class="opacity-50"/>
+            </svg>
+            <div class="absolute -inset-4 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
+        </div>
+        <p class="mt-8 text-blue-400 font-mono text-sm tracking-widest animate-pulse uppercase">Initializing System...</p>
+    </div>
+
     <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-slate-200/60">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
+                
                 <div class="w-12 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">MBM</div>
                 <span class="text-xl font-bold tracking-tight text-slate-800">Muhammad Bilal<span class="text-blue-600"> Mehar</span></span>
             </div>
@@ -85,7 +100,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="experience" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-5xl mx-auto px-6">
             <div class="mb-16">
@@ -362,15 +377,45 @@
     <footer class="py-12 bg-slate-50 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <p class="text-slate-500 text-sm">© 2026 Muhammad Bilal Akram. Code with passion.</p>
-        <div class="flex gap-6 text-slate-400 font-semibold text-sm">
-            <a href="https://github.com/MuhammadBilalMehar" class="hover:text-blue-600 transition">GitHub</a>
-            <a href="https://www.linkedin.com/in/themeharbilal/" class="hover:text-blue-600 transition">LinkedIn</a>
-            <a href="CV.pdf" download class="text-slate-900 hover:text-blue-600 flex items-center gap-1 transition">
-                <i class="fa-solid fa-download"></i> My Resume (PDF)
-            </a>
-        </div>
+        <div class="flex gap-5 items-center justify-center md:justify-end">
+    <a href="https://github.com/MuhammadBilalMehar" class="group transition-all duration-300" aria-label="GitHub">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-slate-900 group-hover:scale-110">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+    </a>
+
+    <a href="https://www.linkedin.com/in/themeharbilal/" class="group transition-all duration-300" aria-label="LinkedIn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-[#0077b5] group-hover:scale-110">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+    </a>
+
+    <a href="mailto:mehar.0011006@gmail.com" class="group transition-all duration-300" aria-label="Email">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-blue-600 group-hover:scale-110">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+    </a>
+    </div>
     </div>
     </footer>
+
+
+
+    <script>
+    // Wait for all assets (images, fonts, etc.) to load
+    window.addEventListener('load', function() {
+        const loader = document.getElementById('loader');
+        // Fade out effect
+        loader.style.opacity = '0';
+        // Remove from DOM after transition
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    });
+    </script>
 
 </body>
 </html>
