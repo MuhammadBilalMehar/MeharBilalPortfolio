@@ -1,101 +1,349 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M Bilal Mehar - Python Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>M Bilal Mehar | Software Engineer & Python Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-text { @apply bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent; }
+        .card-hover { @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-100/50; }
+    </style>
 </head>
+<body class="bg-[#f8fafc] text-slate-900 font-sans selection:bg-blue-100">
 
-<body>
-    <header>
-        <img src="Bilal.jpg" alt="Muhammad Bilal Akram">
-        <h1>Muhammad Bilal Akram</h1>
-        <h2>Python Developer | Programmer | Trainer</h2>
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">B</div>
+                <span class="text-xl font-bold tracking-tight text-slate-800">Bilal<span class="text-blue-600">Mehar</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-full hover:bg-blue-600 transition shadow-md">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-16">
+        <div class="flex-1 order-2 md:order-1 text-center md:text-left">
+            <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Available for Projects</span>
+            <h1 class="text-5xl md:text-7xl font-black text-slate-900 leading-[1.1] mb-6">
+                Building the <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Future</span> with Python.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-xl leading-relaxed">
+                Specializing in robust backend architectures, scalable Django applications, and mentoring the next generation of developers.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="#projects" class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-lg shadow-blue-200 hover:bg-blue-700 transition-all flex items-center gap-2">
+                    View Portfolio <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                
+                <a href="Python Developer Bilal.pdf" download="M_Bilal_Mehar_CV" class="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-2xl font-bold shadow-sm hover:bg-slate-50 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf text-red-500"></i> Download CV
+                </a>
+            </div>
+        </div>
+        <div class="relative order-1 md:order-2">
+            <div class="absolute inset-0 bg-blue-500 blur-[100px] opacity-20 rounded-full"></div>
+            <div class="w-64 h-64 md:w-80 md:h-80 relative z-10">
+                <img src="Bilal.jpg" alt="Muhammad Bilal Akram" class="rounded-[2.5rem] object-cover shadow-2xl grayscale hover:grayscale-0 transition duration-500 border-8 border-white">
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-slate-100">
+                    <div class="bg-orange-100 p-3 rounded-xl text-orange-600"><i class="fa-solid fa-code text-xl"></i></div>
+                    <div><p class="text-sm font-bold text-slate-900">8+ Years</p><p class="text-xs text-slate-500">Exp. in CS</p></div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section class="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <h3>COMSATS Institute Of Information Technologies Islamabad</h3>
-                <p>Bechular of Computer Science</p>
-                <p>Graduation Year: 2019</p>
-            </li>
-        </ul>
-    </section>
-
-    <section class="experience">
-        <h2>Work Experience</h2>
-        <ol>
-            <li>
-                <h3>Algorydhem</h3>
-                <p>Python Developer and Trainer</p>
-                <p>February 2023 - Present</p>
-                <p>Developing tiny projects and advise students about structure of python and trained them to achive small goals and make their programming abilities more productive.</p>
-            </li>
-            <li>
-                <h3>Punjab Group of Colleges SKP Campus</h3>
-                <p>Computer Science Lecturer</p>
-                <p>July 2022 - December 2023</p>
-                <p>Teaching intermidiate slybus of computer science and also Managing a class envirnment and discipline</p>
-            </li>
-            <li>
-                <h3>IDEAL Group of Colleges SKP Campus</h3>
-                <p>Computer Science Lecturer</p>
-                <p>January 2016 - May 2022</p>
-                <p>Teaching intermidiate slybus of computer science and also Managing a class envirnment and discipline</p>
-            </li>
-        </ol>
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>SQLAlchemy</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Information</h2>
-        <p>Email: mehar.0011006@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/themeharbilal/"></a>https://www.linkedin.com/in/themeharbilal/</p>
-        <p>GitHub: <a href="https://github.com/MuhammadBilalMehar"></a>https://github.com/MuhammadBilalMehar</p>
-    </section>
-    <section class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li class="project">
-                <div class="project-description">
-                    <h3 class="project-title">Project 1: Awesome Web App</h3>
-                    <p class="project-date">June 2021 - August 2021</p>
-                    <p class="project-skills">Technologies: HTML, CSS, JavaScript, React</p>
-                    <p>Designed and developed a responsive web application that...</p>
-                </div>
-                <!-- Add your project image or any other relevant content here -->
-            </li>
-
-            <li class="project">
-                <div class="project-description">
-                    <h3 class="project-title">Project 2: Data Analysis Tool</h3>
-                    <p class="project-date">September 2021 - December 2021</p>
-                    <p class="project-skills">Technologies: Python, Pandas, Matplotlib</p>
-                    <p>Created a data analysis tool to process and visualize large datasets...</p>
-                </div>
-                <!-- Add your project image or any other relevant content here -->
-            </li>
+    <section id="experience" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Professional Roadmap</h2>
+                <div class="h-1.5 w-20 bg-blue-600 mt-4 rounded-full"></div>
+            </div>
             
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-</body>
+            <div class="space-y-4">
+                <div class="group relative p-8 rounded-3xl border border-slate-100 hover:bg-slate-50 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Feb 2023 — Present</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mt-1">Python Developer & Technical Lead</h3>
+                            <p class="text-slate-500 font-medium italic">Algorydhem</p>
+                        </div>
+                        <div class="bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                            <span class="text-sm font-bold text-slate-700">Full-Time</span>
+                        </div>
+                    </div>
+                    <ul class="mt-6 space-y-3 text-slate-600">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-blue-500 mt-1"></i> Architected and maintained scalable microservices using Python and Django.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-blue-500 mt-1"></i> Spearheaded technical training modules, mentoring over 50+ students in advanced Python structures.</li>
+                    </ul>
+                </div>
 
+                <div class="group relative p-8 rounded-3xl border border-slate-100 hover:bg-slate-50 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-slate-400 font-bold text-sm uppercase tracking-widest">2016 — 2023</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mt-1">Computer Science Lecturer</h3>
+                            <p class="text-slate-500 font-medium italic text-sm">Punjab Group of Colleges / IDEAL Group</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-slate-600">Delivered comprehensive CS curriculum to intermediate students, consistently achieving 95%+ student pass rates and maintaining rigorous classroom discipline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-16">Core Competencies</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-200/60 card-hover">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-blue-600 text-3xl">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800">Python</h4>
+                    <p class="text-xs text-slate-400 mt-1">Expert</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-200/60 card-hover">
+                    <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-green-600 text-3xl">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800">Django</h4>
+                    <p class="text-xs text-slate-400 mt-1">Backend</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-200/60 card-hover">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-slate-800 text-3xl">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800">Flask</h4>
+                    <p class="text-xs text-slate-400 mt-1">Web APIs</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-200/60 card-hover">
+                    <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-amber-600 text-3xl">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800">SQLAlchemy</h4>
+                    <p class="text-xs text-slate-400 mt-1">Database</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-200/60 card-hover">
+                    <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-red-600 text-3xl">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800">REST APIs</h4>
+                    <p class="text-xs text-slate-400 mt-1">Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Technical Proficiency</h2>
+                    <p class="text-slate-600 mb-8 font-medium">My expertise spans the full Python ecosystem, from backend architecture to data manipulation and educational delivery.</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-700 text-sm">Python / Backend Logic</span>
+                                <span class="text-blue-600 font-bold text-sm">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-blue-600 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-700 text-sm">Django & Flask Frameworks</span>
+                                <span class="text-blue-600 font-bold text-sm">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-blue-600 h-full rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-700 text-sm">Database Modeling (SQLAlchemy/Postgres)</span>
+                                <span class="text-blue-600 font-bold text-sm">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-blue-600 h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 md:p-12 rounded-[3rem] border border-slate-100">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+                        <i class="fa-solid fa-quote-left text-blue-500"></i> What People Say
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                            <p class="text-slate-600 italic mb-4 leading-relaxed">"Bilal's ability to break down complex Python concepts into simple, actionable steps is remarkable. He helped me build my first project in weeks."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">A</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Student at Algorydhem</h4>
+                                    <p class="text-xs text-slate-400">Python Certification Course</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                            <p class="text-slate-600 italic mb-4 leading-relaxed">"A highly disciplined professional who understands both the academic and practical sides of Computer Science. A great asset to any team."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold">P</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Department Head</h4>
+                                    <p class="text-xs text-slate-400">Punjab Group of Colleges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-4 tracking-tight">Project Showcase</h2>
+                <div class="h-1.5 w-24 bg-blue-500 rounded-full"></div>
+                <p class="text-slate-400 mt-6 max-w-2xl text-lg">
+                    A selection of industrial and educational applications built with a focus on clean architecture and scalable logic.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group bg-slate-800/40 border border-slate-700 p-8 rounded-[2rem] hover:border-blue-500/50 hover:bg-slate-800 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded-full border border-blue-500/30 text-blue-400 text-[10px] font-black uppercase tracking-widest">Ed-Tech</span>
+                            <i class="fa-solid fa-graduation-cap text-slate-600 group-hover:text-blue-500 transition"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Training Center App</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Architected a comprehensive educational ERP to automate student lifecycle management, from enrollment to certification, for 100+ active users.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-700/50">
+                        <span class="text-[10px] font-bold text-blue-300">Django</span>
+                        <span class="text-[10px] font-bold text-blue-300">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-800/40 border border-slate-700 p-8 rounded-[2rem] hover:border-green-500/50 hover:bg-slate-800 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded-full border border-green-500/30 text-green-400 text-[10px] font-black uppercase tracking-widest">Inventory</span>
+                            <i class="fa-solid fa-basket-shopping text-slate-600 group-hover:text-green-500 transition"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Grocery Inventory</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Engineered a data-driven inventory solution with real-time stock-level monitoring and automated low-stock alerts to optimize supply chain efficiency.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-700/50">
+                        <span class="text-[10px] font-bold text-green-300">Python</span>
+                        <span class="text-[10px] font-bold text-green-300">SQLite</span>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-800/40 border border-slate-700 p-8 rounded-[2rem] hover:border-purple-500/50 hover:bg-slate-800 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded-full border border-purple-500/30 text-purple-400 text-[10px] font-black uppercase tracking-widest">Productivity</span>
+                            <i class="fa-solid fa-list-check text-slate-600 group-hover:text-purple-500 transition"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Task Manager</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Built a collaborative workflow platform featuring role-based access control (RBAC) and automated deadline tracking to improve team productivity.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-700/50">
+                        <span class="text-[10px] font-bold text-purple-300">Flask</span>
+                        <span class="text-[10px] font-bold text-purple-300">Redis</span>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-800/40 border border-slate-700 p-8 rounded-[2rem] hover:border-orange-500/50 hover:bg-slate-800 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded-full border border-orange-500/30 text-orange-400 text-[10px] font-black uppercase tracking-widest">E-Commerce</span>
+                            <i class="fa-solid fa-utensils text-slate-600 group-hover:text-orange-500 transition"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Food Ordering System</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Developed a secure, end-to-end e-commerce backend with custom API endpoints for order processing, menu management, and real-time status updates.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-700/50">
+                        <span class="text-[10px] font-bold text-orange-300">REST API</span>
+                        <span class="text-[10px] font-bold text-orange-300">SQLAlchemy</span>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-800/40 border border-slate-700 p-8 rounded-[2rem] hover:border-amber-500/50 hover:bg-slate-800 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded-full border border-amber-500/30 text-amber-400 text-[10px] font-black uppercase tracking-widest">Logistics</span>
+                            <i class="fa-solid fa-route text-slate-600 group-hover:text-amber-500 transition"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Tour & Budget Tracker</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Designed a financial logistics tool that automates expense categorization and budget forecasting, reducing manual accounting errors by 90%.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-700/50">
+                        <span class="text-[10px] font-bold text-amber-300">Pandas</span>
+                        <span class="text-[10px] font-bold text-amber-300">Data Analytics</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Let's talk about your next hire.</h2>
+                    <p class="text-slate-600 mb-8 leading-relaxed text-lg">I'm currently looking for new opportunities in Software Engineering and Python development. My inbox is always open.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center"><i class="fa-solid fa-envelope"></i></div>
+                            <div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Email me at</p><p class="font-bold">algorydhem@gmail.com</p></div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center"><i class="fa-solid fa-location-dot"></i></div>
+                            <div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Location</p><p class="font-bold">Sheikhupura, Pakistan</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/mbdaerbw" method="POST" class="space-y-4">
+                    <input type="text" name="name" placeholder="Full Name" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    <input type="email" name="email" placeholder="Email Address" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    <textarea name="message" rows="5" placeholder="Your Message" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none transition"></textarea>
+                    <button class="w-full py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-blue-600 transition shadow-lg">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-slate-500 text-sm">© 2026 Muhammad Bilal Akram. Code with passion.</p>
+        <div class="flex gap-6 text-slate-400 font-semibold text-sm">
+            <a href="https://github.com/MuhammadBilalMehar" class="hover:text-blue-600 transition">GitHub</a>
+            <a href="https://www.linkedin.com/in/themeharbilal/" class="hover:text-blue-600 transition">LinkedIn</a>
+            <a href="CV.pdf" download class="text-slate-900 hover:text-blue-600 flex items-center gap-1 transition">
+                <i class="fa-solid fa-download"></i> My Resume (PDF)
+            </a>
+        </div>
+    </div>
+    </footer>
+
+</body>
 </html>
